@@ -18,7 +18,7 @@
         /></a>
         <ul class="navbar">
           <li>
-            <a href="#welcome">Welcome</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -180,9 +180,9 @@
               capital(uppercase)letter, a number, Minimum 8 characters
             </p>
           </div>
-          <div>
+          <!-- <div> -->
             <!--Take note of the DOM Manipulation in this section-->
-            <p>
+            <!-- <p>
               <strong
                 >Have you used any online platform to advertise your
                 produce?</strong
@@ -195,18 +195,18 @@
               name="group"
               type="radio"
               value="yes"
-            />
+            /> -->
             <!--The id was included for the getElementById-->
-            <label for="no" class="option">No</label>
+            <!-- <label for="no" class="option">No</label>
             <input
               class="radio"
               id="rdbtn2"
               name="group"
               type="radio"
               value="no"
-            /><br /><br />
+            /><br /><br /> -->
             <!--that name attribute is what prevents the user from being able to click on the two buttons since they are the same. If the names are different or are not there, it would be possible to click both-->
-          </div>
+          <!-- </div>
           <div>
             <p><strong>What kind of crop do you grow?</strong></p>
             <label class="option" for="grains">Grains</label>
@@ -217,45 +217,24 @@
             <input type="checkbox" value="tubers" /><br />
             <label class="option" for="fruits">Fruits</label>
             <input type="checkbox" value="fruits" />
-          </div>
+          </div> -->
           <button onclick="return ftn1() " type="submit" id="btn" class="btn">
-            <strong>Submit</strong>
+            Submit
           </button>
         </form>
       </div>
     </main>
 
     <footer>
-      <div>
-        <!-- <nav id="navlink">
-        <ul class="navbar">
-            <li>
-                <a href="#welcome">Welcome</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#general_market">General Market</a>
-            </li>
-            <li>
-                <a href="#join_us">Join Us</a>
-            </li>
-            <li>
-                  <a href="buynow.html">Buy Now</a>
-                </li>
-        </ul>
-    </nav><br> -->
-      </div>
-      <p class="footer-text">
-        You can contact us at <br />Tel.No: +254 456 7683 388596.<br />Address:
+       <p class="footer-text">
+        You can contact us at <br />Tel. No: +254 456 7683 388596.<br />Address:
         Head Office at 9. Freedom Park, Gigiri, Nairobi, Kenya; Branch Office at
         10, Allen Avenue, Ikeja, Lagos.
       </p>
-
-      <span id="logodesign"
+      <div id="team-text">
+      <span
         >Programming queens-Team - Copyright &copy; 2021</span
-      >
+      ></div>
     </footer>
 
     <script src="script.js"></script>

@@ -48,7 +48,7 @@ nav a:link {
 
 #heroImg {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('./Images/market-601580_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,14 +90,13 @@ font-weight: 250;
     content: "";
     display: block;
    	border-bottom: 3px solid #228b22;
-	width: 10%;
+	width: 8%;
 	margin: 0 auto 10px auto;
     }
 
 #why_farm2t {
         display: flex;
-        margin-top: 50px;
-       
+        margin-top: 50px;  
     }
         
 #about {
@@ -211,6 +210,7 @@ font-weight: 250;
   color: rgb(255, 255, 255);
   font-size: 20px;
   border: none;
+  border-radius: 20px;
   padding: 10px 40px;
 }
 
@@ -224,10 +224,17 @@ footer {
 footer .footer-text {
   font-size: 14px;
   line-height: 1.5;
+  text-align: center;
 }
-footer a:visited,
+
+footer #team-text{
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}
+/* footer a:visited,
 footer a:link {
   color: white;
   text-decoration: none;
-}
+} */
 
