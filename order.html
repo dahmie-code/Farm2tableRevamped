@@ -5,74 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farm2Table</title>
-    <link rel="stylesheet" type="text/css" href="farm2table.css">
-    <style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <style>
       form {
         margin-top: 200px;
         margin-left: 400px;
       }
     </style>
-    <script>
-      var checkboxes = document.querySelectorAll("input[type=checkbox]");
-var submit = document.getElementById("submit");
-
-function getChecked() {
-  var checked = [];
-
-  for (var i = 0; i < checkboxes.length; i++) {
-    var checkbox = checkboxes[i];
-    if (checkbox.checked) checked.push(checkbox.value);
-  }
-
-  return checked;
-}
-
-submit.addEventListener("click", function() {
-  var checked = getChecked();
-  console.log(checked);
-});
-       function validate() {
-         var name = document.getElementById("name");
-         var mail = document.getElementById("mail");
-         var password = document.getElementById("pass");
-         var address = document.getElementById("address");
-
-         if(name.value.trim()=="") {
-           alert("Name cannot be blank");
-           return false;
-         } else if(mail.value.trim()=="") {
-          alert("Mail cannot be blank");
-          return false;
-         } else if(password.value.trim().length<5) {
-          alert("Password is too short");
-          return false;
-         }else if(address.value=="") {
-           alert("Address is required");
-           return false;
-         }else {
-           return true;
-         }
-       }
-  </script>
+  -->
 </head>
-<header>
-    <div >
-        <nav id="navlink">
-            <ul class="navbar">
-                <li>
-                    <a href="farm2table.html">Home</a>
-                </li>
-                <li>
-                  <a href="buynow.html">Buy Now</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
-</header>
+
 <body>
+  <header id="heroImg">
+    <nav>
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="./Images/Color logo - no background.svg"
+          alt="farm2table_logo"
+      /></a>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#general_market">General Market</a>
+        </li>
+        <li>
+          <a href="#join_us">Join Us</a>
+        </li>
+        <li>
+          <a href="buynow.html">Buy Now</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <div class="paymentCard">
-        <form   onsubmit="return validate()" action="">
+        <form onsubmit="return validate()" action="">
             <label for="name">Name(Surname first)</label>
             <input id="name" type="text" placeholder="Enter Your Name"><br>
             <label for="email">Email</label>
@@ -93,11 +65,11 @@ submit.addEventListener("click", function() {
     <div class="checkbox">
            <p class="checkbox"><strong>Which of our produce would you like to buy?</strong></p>
            <label for="apples">Apples</label>
-            <input id="check" type="checkbox" value="apples" ><br>
+            <input id="check" type="checkbox" value="apples" >
             <label for="bananas">Bananas</label>
-            <input id="check" type="checkbox" value="bananas"> <br>
+            <input id="check" type="checkbox" value="bananas"> 
             <label for="barley">Barley</label>
-            <input id="check" type="checkbox" value="barley"><br>
+            <input id="check" type="checkbox" value="barley">
             <label for="carrots">Carrots</label>
             <input id="check" type="checkbox" value="carrots">
             <label for="cucumber">Cucumber</label>
@@ -125,7 +97,7 @@ submit.addEventListener("click", function() {
     </div>
     </main>
     
-</body>
+
 <footer>
   <p class="footer-text">
    You can contact us at <br />Tel. No: +254 456 7683 388596.<br />Address:
@@ -137,4 +109,47 @@ submit.addEventListener("click", function() {
    >Programming queens-Team - Copyright &copy; 2021</span
  ></div>
 </footer>
+<script>
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+var submit = document.getElementById("submit");
+
+function getChecked() {
+var checked = [];
+
+for (var i = 0; i < checkboxes.length; i++) {
+var checkbox = checkboxes[i];
+if (checkbox.checked) checked.push(checkbox.value);
+}
+
+return checked;
+}
+
+submit.addEventListener("click", function() {
+var checked = getChecked();
+console.log(checked);
+});
+   function validate() {
+     var name = document.getElementById("name");
+     var mail = document.getElementById("mail");
+     var password = document.getElementById("pass");
+     var address = document.getElementById("address");
+
+     if(name.value.trim()=="") {
+       alert("Name cannot be blank");
+       return false;
+     } else if(mail.value.trim()=="") {
+      alert("Mail cannot be blank");
+      return false;
+     } else if(password.value.trim().length<5) {
+      alert("Password is too short");
+      return false;
+     }else if(address.value=="") {
+       alert("Address is required");
+       return false;
+     }else {
+       return true;
+     }
+   }
+</script>
+</body>
 </html>

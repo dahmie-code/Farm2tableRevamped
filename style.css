@@ -214,6 +214,19 @@ font-weight: 250;
   padding: 10px 40px;
 }
 
+.paymentCard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 50px 50px 50px 800px;
+  width: 30vw;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.paymentCard form{
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   background-color: #228b22;
   color: #fff;
